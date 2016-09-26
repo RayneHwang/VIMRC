@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/lei/.xmind'
 let g:netrw_dirhist_2='/etc/init'
 let g:netrw_dirhist_3='/etc'
 let g:netrw_dirhist_4='/'
 let g:netrw_dirhist_5='/home/lei/.vim'
+let g:netrw_dirhist_6='/home/lei/.oh-my-zsh'
+let g:netrw_dirhist_7='/media/lei/hdd/codetrunk/sjd/sjd2/.git'
