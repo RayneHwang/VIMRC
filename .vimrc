@@ -90,3 +90,21 @@ set relativenumber
 
 
 noremap fm :Autoformat<CR>
+
+"Vundle config
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"Bundle 'gmarik/vundle'
+Bundle 'fatih/vim-go'
+Bundle 'bling/vim-airline'
+set laststatus=2
+"NERDTree
+Bundle 'scrooloose/nerdtree'
+let NERDTreeWinPos='right'
+let NERDTreeWinSize=30
+map <F2> :NERDTreeToggle<CR>
+
+
+filetype plugin indent on
