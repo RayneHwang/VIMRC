@@ -93,7 +93,7 @@ noremap fm :Autoformat<CR>
 
 "Vundle config
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 "Bundle 'gmarik/vundle'
@@ -124,3 +124,19 @@ let mapleader='`'
 "vim-go key map
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
+
+
+"remap window split switch commands
+nmap <silent> <leader><Up> :wincmd k<CR>
+nmap <silent> <leader><Down> :wincmd j<CR>
+nmap <silent> <leader><Left> :wincmd h<CR>
+nmap <silent> <leader><Right> :wincmd l<CR>
+
+nmap <silent> <leader>x  :tabc<CR>
+nmap <leader>w :w<cr>
+
+nmap <leader><PageUp> :tabn<CR>
+nmap <leader><PageDown> :tabp<CR>
+
+nmap <leader>q :q<CR>
+
