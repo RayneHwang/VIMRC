@@ -99,6 +99,7 @@ call vundle#rc()
 "Bundle 'gmarik/vundle'
 Bundle 'fatih/vim-go'
 Bundle 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 "NERDTree
 Bundle 'scrooloose/nerdtree'
@@ -106,5 +107,20 @@ let NERDTreeWinPos='right'
 let NERDTreeWinSize=30
 map <F2> :NERDTreeToggle<CR>
 
-
 filetype plugin indent on
+
+set ts=2
+set expandtab
+
+
+let g:airline#extensions#tabline#enabled = 0
+
+"Force use 256 color in terminal
+set t_Co=256
+
+highlight LineNr ctermfg=yellow
+
+let mapleader='`'
+"vim-go key map
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
